@@ -676,10 +676,12 @@
           <h2 class="modal__title" id="lead-title">Расскажите о ситуации</h2>
           <p class="modal__lead">Заполните форму — текст заявки скопируется. Затем откройте Telegram, вставьте сообщение и отправьте.</p>
 
-          <form class="lead-form" id="lead-form" action="https://formsubmit.co/volsky64@bk.ru" method="POST">
-  <input type="hidden" name="_subject" value="Новая заявка с сайта Право семьи">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://meldon1.github.io/family-lawyer-site/thanks.html">
+          <form class="lead-form" id="lead-form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="46a7a340-7161-43bd-820e-b723a3b8d126">
+  <input type="hidden" name="subject" value="Новая заявка с сайта Право семьи">
+  <input type="hidden" name="from_name" value="Сайт Право семьи">
+  <input type="hidden" name="redirect" value="https://meldon1.github.io/family-lawyer-site/">
+  <input type="checkbox" name="botcheck" style="display: none;">
 
   <div class="field-row">
     <div class="field">
@@ -720,8 +722,7 @@
     Отправить заявку
   </button>
   <p class="form-note">Заявка уходит напрямую на почту юриста. Ответ в рабочее время.</p>
-</form>
-        </div>
+</form>        </div>
 
         <div class="form-success" id="lead-success" hidden>
           <div class="form-success__icon" aria-hidden="true">

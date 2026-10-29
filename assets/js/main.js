@@ -457,7 +457,7 @@
         consentInput.removeAttribute("aria-invalid");
       });
     }
-
+  }
       
 
   /* ---------------- FAQ: one open at a time ---------------- */

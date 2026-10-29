@@ -458,18 +458,7 @@
       });
     }
 
-      if (formWrap) formWrap.hidden = true;
-      if (successWrap) successWrap.hidden = false;
-      if (modal) modal.setAttribute("aria-labelledby", "success-title");
-      var successTitle = successWrap ? $(".modal__title", successWrap) : null;
-      if (successTitle) {
-        successTitle.setAttribute("tabindex", "-1");
-        window.setTimeout(function () {
-          successTitle.focus({ preventScroll: true });
-        }, 40);
-      }
-    });
-  }
+      
 
   /* ---------------- FAQ: one open at a time ---------------- */
 

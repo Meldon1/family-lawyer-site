@@ -458,35 +458,6 @@
       });
     }
 
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-      if (!validateForm()) return;
-
-      var name = $("#lead-name").value.trim();
-      var contact = $("#lead-contact").value.trim();
-      var topic = $("#lead-topic").value;
-      var message = $("#lead-message").value.trim();
-
-      var lines = [
-        "Заявка с сайта «" + (cfg.brandName || "Право семьи") + "»",
-        "",
-        "Имя: " + name,
-        "Связь: " + contact
-      ];
-      if (topic) lines.push("Направление: " + topic);
-      if (message) lines.push("Ситуация: " + message);
-      lastMessage = lines.join("\n");
-
-      var preview = $("#message-preview");
-      if (preview) preview.textContent = lastMessage;
-
-      var telegramAgain = $("#telegram-again");
-      if (telegramAgain) telegramAgain.href = telegramUrl;
-
-      copyText(lastMessage).then(function (copied) {
-        setCopyStatus(copied);
-      });
-
       if (formWrap) formWrap.hidden = true;
       if (successWrap) successWrap.hidden = false;
       if (modal) modal.setAttribute("aria-labelledby", "success-title");

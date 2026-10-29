@@ -3364,3 +3364,41 @@ a.contact-card:hover .contact-card__arrow {
   flex: 1 1 100%;
   width: 100%;
 }
+/* Кнопка «Заявка» в шапке */
+.header__lead-btn {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .header__lead-btn {
+    display: inline-flex;
+  }
+}
+
+/* Плавающая кнопка «Оставить заявку» */
+.floating-lead {
+  position: fixed;
+  right: 20px;
+  bottom: 24px;
+  z-index: 50;
+}
+
+.floating-lead .btn {
+  min-height: 52px;
+  padding: 0 22px;
+  font-size: 11px;
+  box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 899px) {
+  .floating-lead {
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+  }
+
+  .floating-lead .btn {
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 10.5px;
+  }
+}

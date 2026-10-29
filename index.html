@@ -676,51 +676,51 @@
           <h2 class="modal__title" id="lead-title">Расскажите о ситуации</h2>
           <p class="modal__lead">Заполните форму — текст заявки скопируется. Затем откройте Telegram, вставьте сообщение и отправьте.</p>
 
-          <form class="lead-form" id="lead-form" novalidate>
-            <div class="field-row">
-              <div class="field">
-                <label for="lead-name">Имя</label>
-                <input id="lead-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" aria-describedby="name-error" required>
-                <span class="field__error" id="name-error" aria-live="polite"></span>
-              </div>
-              <div class="field">
-                <label for="lead-contact">Телефон или Telegram</label>
-                <input id="lead-contact" name="contact" type="text" autocomplete="tel" placeholder="+7 ... или @username" aria-describedby="contact-error" required>
-                <span class="field__error" id="contact-error" aria-live="polite"></span>
-              </div>
-            </div>
+          <form class="lead-form" id="lead-form" action="https://formsubmit.co/volsky64@bk.ru" method="POST">
+  <input type="hidden" name="_subject" value="Новая заявка с сайта Право семьи">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://meldon1.github.io/family-lawyer-site/thanks.html">
 
-            <div class="field">
-              <label for="lead-topic">Направление</label>
-              <select id="lead-topic" name="topic">
-                <option value="">Выберите, если хотите</option>
-                <option>Расторжение брака</option>
-                <option>Раздел имущества</option>
-                <option>Алименты</option>
-                <option>Споры о детях</option>
-                <option>Брачный договор</option>
-                <option>Переговоры и соглашения</option>
-                <option>Другое</option>
-              </select>
-            </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="lead-name">Имя</label>
+      <input id="lead-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required>
+    </div>
+    <div class="field">
+      <label for="lead-contact">Телефон или Telegram</label>
+      <input id="lead-contact" name="contact" type="text" autocomplete="tel" placeholder="+7 ... или @username" required>
+    </div>
+  </div>
 
-            <div class="field">
-              <label for="lead-message">Коротко о ситуации</label>
-              <textarea id="lead-message" name="message" rows="3" placeholder="Например: разводимся, есть ребёнок 7 лет, делим квартиру"></textarea>
-            </div>
+  <div class="field">
+    <label for="lead-topic">Направление</label>
+    <select id="lead-topic" name="topic">
+      <option value="">Выберите, если хотите</option>
+      <option>Расторжение брака</option>
+      <option>Раздел имущества</option>
+      <option>Алименты</option>
+      <option>Споры о детях</option>
+      <option>Брачный договор</option>
+      <option>Переговоры и соглашения</option>
+      <option>Другое</option>
+    </select>
+  </div>
 
-            <label class="checkbox">
-              <input type="checkbox" name="consent" id="lead-consent" aria-describedby="consent-error" required>
-              <span>Согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank" rel="noopener">политикой конфиденциальности</a>.</span>
-            </label>
-            <span class="field__error field__error--consent" id="consent-error" aria-live="polite"></span>
+  <div class="field">
+    <label for="lead-message">Коротко о ситуации</label>
+    <textarea id="lead-message" name="message" rows="3" placeholder="Например: разводимся, есть ребёнок 7 лет, делим квартиру"></textarea>
+  </div>
 
-            <button class="btn btn--gold btn--full" type="submit">
-              <svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg>
-              Подготовить заявку
-            </button>
-            <p class="form-note">Данные не отправляются на сервер: текст заявки формируется на вашем устройстве и копируется в буфер. Отправку в Telegram вы подтверждаете сами.</p>
-          </form>
+  <label class="checkbox">
+    <input type="checkbox" name="consent" required>
+    <span>Согласен(на) на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank" rel="noopener">политикой конфиденциальности</a>.</span>
+  </label>
+
+  <button class="btn btn--gold btn--full" type="submit">
+    Отправить заявку
+  </button>
+  <p class="form-note">Заявка уходит напрямую на почту юриста. Ответ в рабочее время.</p>
+</form>
         </div>
 
         <div class="form-success" id="lead-success" hidden>
